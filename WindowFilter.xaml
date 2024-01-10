@@ -1,0 +1,21 @@
+﻿<Window x:Class="Lab5.WindowFilter"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab5"
+        mc:Ignorable="d"
+        Title="Фильтр" Height="277" Width="794">
+    <Grid>
+        <Label Content="Установить фильтр" HorizontalAlignment="Left" Margin="16,20,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="Selector" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Margin="16,60,0,0" Width="354" SelectedIndex="0">
+            <TextBlock>без фильтра</TextBlock>
+            <TextBlock>по названию</TextBlock>
+            <TextBlock>по имени автора</TextBlock>
+            <TextBlock>по ключевым словам</TextBlock>
+        </ComboBox>
+        <TextBox x:Name="SearchString" HorizontalAlignment="Center" Height="31" TextWrapping="Wrap" VerticalAlignment="Center" Width="738"/>
+        <Button Content="OK" HorizontalAlignment="Left" Margin="146,186,0,0" VerticalAlignment="Top" Height="31" Width="177" Click="ButtonOK_Click"/>
+        <Button Content="Отмена" HorizontalAlignment="Left" Margin="400,186,0,0" VerticalAlignment="Top" Height="31" Width="179" Click="ButtonCancel_Click"/>
+    </Grid>
+</Window>

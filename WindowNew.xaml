@@ -1,0 +1,26 @@
+﻿<Window x:Class="Lab5.WindowNew"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab5"
+        mc:Ignorable="d"
+        Title="Добавить новую книгу" Height="550" Width="832">
+    <Grid Margin="0,0,0,0">
+        <Label Content="Название" HorizontalAlignment="Left" Margin="23,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="_Title" HorizontalAlignment="Center" Height="30" Margin="0,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="780"/>
+        <Label Content="Автор" HorizontalAlignment="Left" Margin="26,78,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="_Author" HorizontalAlignment="Center" Height="30" Margin="0,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="780"/>
+        <Label Content="Жанр" HorizontalAlignment="Left" Margin="26,144,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="_Genre" HorizontalAlignment="Center" Height="30" Margin="0,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="780"/>
+        <Label Content="Дата" HorizontalAlignment="Left" Margin="26,210,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="_Date" HorizontalAlignment="Center" Height="30" Margin="0,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="780"/>
+        <Label Content="Аннотация" HorizontalAlignment="Left" Margin="26,272,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="_Annotation" HorizontalAlignment="Center" Height="30" Margin="0,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="780"/>
+        <Label Content="Номер ISBN" HorizontalAlignment="Left" Margin="26,338,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="_ISBN" HorizontalAlignment="Center" Height="30" Margin="0,373,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="780"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="194,441,0,0" VerticalAlignment="Top" Height="31" Width="177" Click="ButtonOK_Click"/>
+        <Button Content="Отмена" HorizontalAlignment="Left" Margin="444,441,0,0" VerticalAlignment="Top" Height="31" Width="179" Click="ButtonCancel_Click"/>
+
+    </Grid>
+</Window>

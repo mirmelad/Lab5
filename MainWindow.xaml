@@ -1,0 +1,22 @@
+﻿<Window x:Class="Lab5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab5"
+        mc:Ignorable="d"
+        Title="Книжный каталог" Height="700" Width="1200">
+    <Grid>
+        <Button x:Name="ButtonExit" Content="Выход" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="30" Width="400"  Click="ButtonExit_Click"/>
+        <Button x:Name="ButtonNew" Content="Добавить" HorizontalAlignment="Left" Margin="400,0,0,0" VerticalAlignment="Top" Height="30" Width="400" Click="ButtonNew_Click" />
+        <Button x:Name="ButtonFilter" Content="Фильтр" HorizontalAlignment="Left" Margin="800,0,0,0" VerticalAlignment="Top" Height="30" Width="400"  Click="ButtonFilter_Click" />
+        <DataGrid x:Name="DataGrid1" AutoGenerateColumns="False" Margin="0,30,0,0"  Width="1200" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Название" Width="300" Binding="{Binding Title}"/>
+                <DataGridTextColumn Header="Автор" Width="150" Binding="{Binding Author}"/>
+                <DataGridTextColumn Header="Жанр" Width="150" Binding="{Binding Genre}"/>
+                <DataGridTextColumn Header="Аннотация" Width="600" Binding="{Binding Annotation}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
